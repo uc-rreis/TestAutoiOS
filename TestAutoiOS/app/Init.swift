@@ -19,11 +19,11 @@ func sdkInit(ucId: String, isRuleset: Bool){
     let options = UsercentricsOptions()
     
     if (isRuleset){
-        options.ruleSetId = id!
-        print("\(SDKInitData.LOG_TAG) Using ruletsetId: \(id!)")
+        options.ruleSetId = id
+        print("\(SDKInitData.LOG_TAG) Using ruletsetId: \(id)")
     } else {
-        options.settingsId = id!
-        print("\(SDKInitData.LOG_TAG) Using settingsId: \(id!)")
+        options.settingsId = id
+        print("\(SDKInitData.LOG_TAG) Using settingsId: \(id)")
     }
     
     options.loggerLevel = UsercentricsLoggerLevel.debug

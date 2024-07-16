@@ -84,9 +84,9 @@ struct UsercentricsUIViewController: UIViewControllerRepresentable {
             // Handle non-localized error
             print("\(SDKInitData.LOG_TAG) SDK not yet ready")
         }
-        
+    }
+    
+    func clearUserSession(){
         
     }
-
-    
 }

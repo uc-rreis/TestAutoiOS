@@ -10,7 +10,7 @@ import Usercentrics
 
 
 struct SDKInitData {
-    static let settingsId: String? = "egLMgjg9j" // //"egLMgjg9j" //"Insi1P6_p" //"syV5G8hMG" //"hKTmJ4UVL" 
+    static var settingsId: String = "egLMgjg9j" // //"egLMgjg9j" //"Insi1P6_p" //"syV5G8hMG" //"hKTmJ4UVL"
     static let rulesetId: String? = "" //YxCPTs3W9"
     static let LOG_ERROR_TAG = "[USERCENTRICS][ERROR]: "
     static let LOG_TAG = "[USERCENTRICS][SAMPLE]: "

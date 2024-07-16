@@ -35,11 +35,12 @@ struct ContentView: View {
                         TextField("RulesetId/SettingsId", text: $ucId)
                             .textFieldStyle(.roundedBorder)
                             .font(.subheadline)
+                            .accessibilityIdentifier("settings_id")
                         Toggle(isOn: $isRuleset) {
                             Text("Is RulesetId")
                                 .font(.subheadline)
                         }
-                        .accessibilityIdentifier("Is RulesetId")
+                        .accessibilityIdentifier("checkbox_ruleset")
                     }
                     .padding(10)
                     
@@ -47,12 +48,12 @@ struct ContentView: View {
                         sdkInit(ucId: ucId, isRuleset: isRuleset)
                         UsercentricsUIViewController().showFirstLayer(layout: .full)
                     }
+                    .accessibilityIdentifier("btn_init")
                     .frame(width: 250, height: 35)
                     .foregroundColor(.white)
                     .background(.red)
                     .cornerRadius(5)
                     .padding(10)
-                    .accessibilityIdentifier("Initialize SDK")
                     
                 }
                 .padding()
@@ -74,7 +75,7 @@ struct ContentView: View {
                         .background(.blue)
                         .cornerRadius(5)
                         .padding(5)
-                        .accessibilityIdentifier("Full CMP")
+                        .accessibilityIdentifier("btn_full")
                         
                         Button("First Layer Bottom"){
                             UsercentricsUIViewController().showFirstLayer(layout: .popup(position: .bottom))
@@ -84,7 +85,7 @@ struct ContentView: View {
                         .background(.blue)
                         .cornerRadius(5)
                         .padding(5)
-                        .accessibilityIdentifier("First Layer Bottom")
+                        .accessibilityIdentifier("btn_first_bottom")
                         
                         Button("First Layer Center"){
                             UsercentricsUIViewController().showFirstLayer(layout: .popup(position: .center))
@@ -94,7 +95,7 @@ struct ContentView: View {
                         .background(.blue)
                         .cornerRadius(5)
                         .padding(5)
-                        .accessibilityIdentifier("First Layer Center")
+                        .accessibilityIdentifier("btn_first_center")
                         
                         Button("First Layer Sheet"){
                             UsercentricsUIViewController().showFirstLayer(layout: .sheet)
@@ -104,7 +105,7 @@ struct ContentView: View {
                         .background(.blue)
                         .cornerRadius(5)
                         .padding(5)
-                        .accessibilityIdentifier("First Layer Sheet")
+                        .accessibilityIdentifier("btn_first_sheet")
                         
                         
                         Button("Second Layer"){
@@ -115,7 +116,8 @@ struct ContentView: View {
                         .background(.blue)
                         .cornerRadius(5)
                         .padding(5)
-                        .accessibilityIdentifier("Second Layer")
+                        .accessibilityIdentifier("btn_second_layer")
+                        
                     }
                     .padding()
                     .frame(width: 300, height: 300, alignment: .center)
@@ -127,6 +129,16 @@ struct ContentView: View {
                     Spacer(minLength: 3.0)
                 
                     
+                    Button("Clear User Session"){
+                        UsercentricsUIViewController().clearUserSession()
+                    }
+                    .frame(width: 250, height: 35)
+                    .foregroundColor(.white)
+                    .background(.red)
+                    .cornerRadius(5)
+                    .padding(5)
+                    .accessibilityIdentifier("btn_clear_user_session")
+                    
                     NavigationLink(destination: UCWebView()){
                         Text("Open Webview")
                             .frame(width: 250, height: 40)
@@ -134,7 +146,7 @@ struct ContentView: View {
                             .background(.blue)
                             .cornerRadius(5)
                             .padding(5)
-                            .accessibilityIdentifier("Preview")
+                            .accessibilityIdentifier("btn_open_webview")
                     }
                     
                     Spacer(minLength: 15.0)

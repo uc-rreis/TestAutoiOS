@@ -27,8 +27,13 @@ fileprivate func getContentController(sessionData: String) -> WKUserContentContr
     
     // Script to inject session data on webview
     let userSessionData = """
-        window.UC_UI_USER_SESSION_DATA = \(sessionData);
-    """
+        window.ucMobileSdk = {
+            getUserSessionData: function() {
+                return '\(sessionData)';
+            }
+        }
+        """
+
     
     // Script to hide privacy button on webview
     let hidePrivacyButton = """

@@ -34,5 +34,6 @@ fileprivate func getURL()-> String {
 //    
 //    return url
     
-    return "https://app.usercentrics.eu/browser-ui/preview/index.html?settingsId=\(UsercentricsCore.shared.getCMPData().settings.settingsId)"
+    //return "https://app.usercentrics.eu/browser-ui/preview/index.html?settingsId=\(UsercentricsCore.shared.getCMPData().settings.settingsId)"
+    return "https://web.cmp.usercentrics-sandbox.eu/ui/pr/602/index.html?settingsId=A5kxyiGIlRnPdd"
 }

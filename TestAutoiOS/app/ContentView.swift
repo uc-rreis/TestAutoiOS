@@ -130,7 +130,7 @@ struct ContentView: View {
                 
                     
                     Button("Clear User Session"){
-                        UsercentricsUIViewController().clearUserSession()
+                        clearUserSession()
                     }
                     .frame(width: 250, height: 35)
                     .foregroundColor(.white)

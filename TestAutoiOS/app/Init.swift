@@ -23,12 +23,24 @@ func sdkInit(ucId: String, isRuleset: Bool){
         print("\(SDKInitData.LOG_TAG) Using ruletsetId: \(id)")
     } else {
         options.settingsId = id
+        
         print("\(SDKInitData.LOG_TAG) Using settingsId: \(id)")
     }
-    
+    //options.defaultLanguage = "ar"
     options.loggerLevel = UsercentricsLoggerLevel.debug
     options.consentMediation = false
     //options.networkMode = NetworkMode.eu
     UsercentricsCore.configure(options: options)
+    UsercentricsCore.isReady { status in
+        // Handle status
+        let services = UsercentricsCore.shared.getCMPData().services
+        for serv in services {
+            print("DPS: \(serv.dataPurposes) -- LEGAL BASIS: \(serv.legalBasisList)")
+        }
+        
+    } onFailure: { error in
+        // Handle error
+        print("ERROR: \(error.localizedDescription)")
+    }
 
 }

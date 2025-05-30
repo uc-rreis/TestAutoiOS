@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import Usercentrics
 @testable import TestAutoiOS
 
 final class TestAutoiOSTests: XCTestCase {
@@ -19,10 +20,20 @@ final class TestAutoiOSTests: XCTestCase {
     }
 
     func testInit(){
-        for i in 0..<50 {
-            
-            var settingsId = getDefaultSettingsId()
-            sdkInit(ucId: settingsId, isRuleset: false)
+//        setSettingsId(settingsId: "l0uj4jwLoxvELu")
+//        let settingsId = getDefaultSettingsId()
+        for _ in 0..<50 {
+            sdkInit(ucId: "l0uj4jwLoxvELu", isRuleset: false)
+            UsercentricsCore.isReady { status in
+                // Handle status
+                print("SDK is Ready!")
+                UsercentricsCore.shared.denyAll(consentType: .implicit)
+                
+                clearUserSession()
+            } onFailure: { error in
+                // Handle error
+                print("SDK is not ready! Error: \(error.localizedDescription)")
+            }
             
         }
     }

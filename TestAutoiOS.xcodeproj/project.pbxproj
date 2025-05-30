@@ -303,6 +303,7 @@
 			packageReferences = (
 				B72BC6DE2BB1C0A4005D1D07 /* XCRemoteSwiftPackageReference "SVGKit" */,
 				B72BC6E32BB1C0B3005D1D07 /* XCRemoteSwiftPackageReference "usercentrics-spm-ui" */,
+				EFD0F6962CAD87C300ED2D7A /* XCRemoteSwiftPackageReference "usercentrics-spm-sdk" */,
 			);
 			productRefGroup = B7112D722BAC63390048C3DD /* Products */;
 			projectDirPath = "";
@@ -525,13 +526,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TestAutoiOS/Preview Content\"";
-				DEVELOPMENT_TEAM = D4388L47QZ;
+				DEVELOPMENT_TEAM = 4GB94SV7D4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -555,13 +556,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"TestAutoiOS/Preview Content\"";
-				DEVELOPMENT_TEAM = D4388L47QZ;
+				DEVELOPMENT_TEAM = 4GB94SV7D4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -661,7 +662,7 @@
 				B7112D7E2BAC633B0048C3DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		B7112D7F2BAC633B0048C3DD /* Build configuration list for PBXNativeTarget "TestAutoiOS" */ = {
 			isa = XCConfigurationList;
@@ -670,7 +671,7 @@
 				B7112D812BAC633B0048C3DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		EF805E9A2C46D375001ED198 /* Build configuration list for PBXNativeTarget "TestAutoiOSTests" */ = {
 			isa = XCConfigurationList;
@@ -679,7 +680,7 @@
 				EF805E992C46D375001ED198 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		EF805EA72C46D389001ED198 /* Build configuration list for PBXNativeTarget "TestAutoiOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -688,7 +689,7 @@
 				EF805EA92C46D389001ED198 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 
@@ -706,7 +707,15 @@
 			repositoryURL = "https://bitbucket.org/usercentricscode/usercentrics-spm-ui";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 2.13.2;
+				minimumVersion = 2.15.0;
+			};
+		};
+		EFD0F6962CAD87C300ED2D7A /* XCRemoteSwiftPackageReference "usercentrics-spm-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://bitbucket.org/usercentricscode/usercentrics-spm-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.15.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

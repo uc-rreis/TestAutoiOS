@@ -1,5 +1,5 @@
 {
-  "originHash" : "da0f9754ec06f1df99ff4de78e42e530b57aedbbab2ff272df35d3a93437f40e",
+  "originHash" : "0667d8675c6ec5fd2f21b8f6817282ad95c75805e6c29ebee975df871b34f033",
   "pins" : [
     {
       "identity" : "cocoalumberjack",
@@ -24,8 +24,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-log",
       "state" : {
-        "revision" : "e97a6fcb1ab07462881ac165fdbb37f067e205d5",
-        "version" : "1.5.4"
+        "revision" : "3d8596ed08bd13520157f0355e35caed215ffbfa",
+        "version" : "1.6.3"
       }
     },
     {
@@ -33,8 +33,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://bitbucket.org/usercentricscode/usercentrics-spm-sdk",
       "state" : {
-        "revision" : "e1aad7dbac6c7f0aa0c3ec3336a2b4f4090be4b9",
-        "version" : "2.15.2"
+        "revision" : "917c369f831c5861c35c1a76ded94c30eb46d2e1",
+        "version" : "2.20.3"
       }
     },
     {
@@ -42,8 +42,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://bitbucket.org/usercentricscode/usercentrics-spm-ui",
       "state" : {
-        "revision" : "53cfc4644a1d0caf6f9e8e86d6fc7bf1ce5703c3",
-        "version" : "2.15.2"
+        "revision" : "7feb33a0df698a5c713d09e953ce176878e2407f",
+        "version" : "2.20.3"
       }
     }
   ],
